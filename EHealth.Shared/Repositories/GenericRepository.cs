@@ -53,6 +53,7 @@ namespace EHealth.Shared.Repositories
             {
                 throw new ArgumentNullException("entity");
             }
+            _entities.Update(entity);
             _context.SaveChanges();
         }
 

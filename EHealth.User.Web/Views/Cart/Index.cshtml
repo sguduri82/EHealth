@@ -28,7 +28,7 @@
             {
                 <tr>
                     <td>
-                        <img src="~/images/@item.Medicine.Image" />
+                        <img src="~/images/@item.Medicine.Image" width="200" height="200"/>
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Quantity)
@@ -39,9 +39,9 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Medicine.Price)
                     </td>
-                    <td>
+                    @*<td>
                         @Html.ActionLink("Delete", "Remove", "Cart", new { ProductId = item.Medicine.Id }, new { @class = "btn btn-danger" })
-                    </td>
+                    </td>*@
                 </tr>
             }
     </tbody>
